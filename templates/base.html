@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+{% load staticfiles %}
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+    	<!-- meta character set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+         <title>Автосервис в Королеве</title>
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="{% static 'img/favicon.ico'%}" type="image/x-icon">
+		<link rel="sitemap" type="application/xml" title="Sitemap" href="{% static 'sitemap.xml'%}" />
+		<meta name="description" content="
+        Полный спектр услуг по техническому обслуживанию автомобилей всех известных марок. Мастера профессионалы. Не дорого.
+        Оставить заявку можно по телефону +7(903) 757-07-35.
+		">
+		<meta name="keywords" content="заправка кондиционера, диагностика автомобиля,
+		замена масла в двигателе, замена масла в КПП, замена масла в АКПП, замена тормозных колодок, замена тормозных дисков,
+		замена воздушного фильтра, замена масляного фильтра, замена салонного фильтров, замена технических жидкостей,
+        ремонт глушителей, ремонт всей выхлопной системы, ремонт двигателя, сварочные работы,
+        замена свечей зажигания, замена ремней кондиционера, замена ремней вспомогательных агрегатов, замена ремня ГРМ,
+        замена тормозной жидкости, замена охлаждающей жидкости, техническое обслуживание, ремонт авто, автосервис,
+        автослесарь, ремонт автомобиля,  низкие цены, приемлемая стоимость  работ, гибкие расценки, не дорого, онлайн,
+        консультация, Москва, Мытищи, Пушкино, Ивантеевка, Королев, Щелково, Юбилейный, Болшево
+		">
+		<meta property="og:locale" content="ru_RU" />
+		<meta property="og:title" content="Автосервис в г.Королев. Не дорого! Звоните!" />
+		<meta property="og:type" content="article" />
+		<meta property="og:description" content="Автосервис. Низкие цены на работу!" />
+		<meta property="og:url" content="http://autoservis-korolev.ru" />
+		<meta property="og:site_name" content="Автосервис в Королеве" />
+		<meta property="og:image" content="http://autoservis-korolev.ru/static/img/engn.jpg" />
+		<meta property="og:image:width" content="160" />
+        <meta property="og:image:height" content="109" />
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+		
+		<!-- Fontawesome Icon font -->
+
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css'%}">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="{% static 'css/jquery.fancybox.css'%}">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.css'%}">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="{% static 'css/slit-slider.css'%}">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="{% static 'css/main.css'%}">
+
+        <link type="text/plain" rel="author" href="{% static 'humans.txt'%}" />
+		<!-- Modernizer Script for old Browsers -->
+        <script src="{% static 'js/modernizr-2.6.2.min.js'%}"></script>
+        <!-- Yandex.Metrika counter -->
+		<script type="text/javascript" >
+		    (function (d, w, c) {
+		        (w[c] = w[c] || []).push(function() {
+		            try {
+		                w.yaCounter46473642 = new Ya.Metrika({
+		                    id:46473642,
+		                    clickmap:true,
+		                    trackLinks:true,
+		                    accurateTrackBounce:true,
+		                    webvisor:true
+		                });
+		            } catch(e) { }
+		        });
+
+		        var n = d.getElementsByTagName("script")[0],
+		            s = d.createElement("script"),
+		            f = function () { n.parentNode.insertBefore(s, n); };
+		        s.type = "text/javascript";
+		        s.async = true;
+		        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+		        if (w.opera == "[object Opera]") {
+		            d.addEventListener("DOMContentLoaded", f, false);
+		        } else { f(); }
+		    })(document, window, "yandex_metrika_callbacks");
+		</script>
+		<noscript><div><img src="https://mc.yandex.ru/watch/46473642" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+		<!-- /Yandex.Metrika counter -->
+        <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+        <script src="https://yastatic.net/share2/share.js"></script>
+    </head>
+	
+    <body id="body">
+
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Переключение навигации</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					<h1 class="navbar-brand">
+						<a href="#body"><i class="fa fa-rocket fa-1x"></i>&nbsp;Автосервис в Королеве <span> +7(903) 757-07-35</span></a>
+					</h1>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li><a href="#body">Главная</a></li>
+                        <li><a href="#service">Услуги</a></li>
+                        <li><a href="#portfolio">Фото Работ</a></li>
+                        <li><a href="#testimonials">Отзывы</a></li>
+                        <li><a href="#price">Цены</a></li>
+                        <li><a href="#contact">Как наc найти ?</a></li>
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<main class="site-content" role="main">
+		
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		<section id="home-slider">
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+				
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+
+						<div class="bg-img bg-img-1"></div>
+
+						<div class="slide-caption">
+                            <div class="caption-content">
+                                <h2 class="animated fadeInDown">Плановое Тех. Обслуживание </h2>
+                                <span class="animated fadeInDown">только проверенные комплектующие</span>    
+                            </div>
+                        </div>
+						
+					</div>
+					
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+					
+						<div class="bg-img bg-img-2"></div>
+						<div class="slide-caption">
+                            <div class="caption-content">
+                                <h2>Ремонт двигателя и АКПП</h2>
+                                <span>гарантированное качество выполняемых работ</span>
+                                
+                            </div>
+                        </div>
+						
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+						
+						<div class="bg-img bg-img-3"></div>
+						<div class="slide-caption">
+                            <div class="caption-content">
+                                <h2>Диагностика и ремонт ходовой</h2>
+                                <span>профессианальный подход даже к небольшой проблеме</span>
+                               
+                            </div>
+                        </div>
+
+					</div>
+
+				</div><!-- /sl-slider -->
+                
+                <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+                    <a href="javascript:;" class="sl-prev">
+                        <i class="fa fa-angle-left fa-3x"></i>
+                    </a>
+                    <a href="javascript:;" class="sl-next">
+                        <i class="fa fa-angle-right fa-3x"></i>
+                    </a>
+                </nav>
+                
+
+				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+				</nav>
+
+			</div><!-- /slider-wrapper -->
+		</section>
+		
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+			
+			<!-- about section -->
+			<section id="about" >
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 wow animated fadeInLeft">
+							<div class="recent-works">
+								<h3>Об этом надо знать:</h3>
+								<div id="works">
+									{% for interest in interests %}
+									<div class="work-item">
+
+										<p>{% autoescape off %}{{ interest.text|truncatewords_html:120 }}{% endautoescape %}</p>
+
+									</div>
+									{% endfor %}
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-md-offset-1 wow animated fadeInRight">
+							<div class="welcome-block">
+								<h3>Привет, добро пожаловать к нам в гараж!</h3>								
+						     	 <div class="message-body">
+									<img src="{% static 'img/owner.jpg'%}" class="pull-left" alt="Владелец автосервиса">
+						       		<p>Ремонт автомобиля является неотъемлемой частью его эксплуатации, так как абсолютно любой автомобиль рано или поздно требует ремонта. Многие автолюбители предпочитают производить авто ремонт самостоятельно, однако все таки для этого лучше обращаться в автосервис, так как квалифицированные работники с большим опытом произведут ремонт гораздо качественнее, надежнее и быстрее, чем неподготовленный человек. К тому же некоторые виды ремонта просто невозможны без обращения в автосервис. Других причин, а также видов ремонта, для которых просто необходимо обращение в автосервис, огромное количество и нет смысла их все перечислять. Поэтому, если у Вас неисправен автомобиль, не занимайтесь саморемонтом.<br>
+						       		&nbsp; Мы предлагаем полный спектр услуг по техническому обслуживанию автомобилей всех известных марок. Мы можем производить ремонт автомобиля абсолютно любой сложности. При этом качество, надежность и гарантия остаются всегда на высоте, все работы и услуги, а так же доставка запчастей, проводятся в кратчайшие сроки, а цены являются одними из самых низких.<br>
+						       		&nbsp;В случае возникновения технических проблем наши клиенты могут быть уверены в своевременном и эффективном их решении. На весь ремонт предоставляется гарантия.<br>
+						       		</p><br>
+						       		<p style="float:right;"><i><b>Николай,&nbsp;владелец сервиса.</b></i></p>
+						     	 </div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end about section -->
+			
+			
+			<!-- Service section -->
+			<section id="service">
+				<div class="container">
+					<div class="row">
+					
+						<div class="sec-title text-center">
+							<h2 class="wow animated bounceInLeft">Услуги</h2>
+							<p class="wow animated bounceInRight">Мы ценим каждого клиента пришедшего к нам и любим заниматься своим делом, да и просто любим авто!<br> Оцените и Вы наш особый подход к работе.</p>
+							<p class="wow animated bounceInLeft">У нас Вы получите полный спектр услуг по техническому обслуживанию автомобилей всех известных марок.<br> Мы произведем ремонт автомобиля любой сложности, предоставив Вам гарантии.</p>
+						    </div>
+
+							<div class='row'>
+							<div class="col-md-6 col-sm-3 col-xs-6 wow animated fadeInLeft">
+									<div  class="work-item">
+										<p>В спектр услуг автосервиса входит:<br><br>
+										<ul>
+										{% for slst in sList %}
+										<li>{{ slst.title}} {{ slst.description}}</li>
+										{% empty %}
+										<li>Контент редактируется</li>
+										{% endfor %}
+										</ul>
+								</div>
+		                       </div>
+		                       <div class="col-md-6 col-sm-3 col-xs-6 wow animated fadeInRight">
+							 <div  class="work-item">
+
+							<p>В регламент по техобслуживанию автомобиля входит:<br><br>
+										<ul>
+								      {% for slstTO in sListTO %}
+										<li>{{ slstTO.title}} {{ slstTO.description}}</li>
+										{% empty %}
+										<li>Контент редактируется</li>
+										{% endfor %}
+										</ul>
+						         </div>
+								</div>
+								</div>
+								<br>
+						<div class="sec-title text-center">
+						<p class="wow animated bounceInRight">Данный список техобслуживания является примерным и не полным, реальные регламентные работы по техническому обслуживанию и их интервалы для каждого автомобиля разные и зависят от марки и модели авто. Из всего вышенаписанного следует - не стоит затягивать с техническим обслуживанием автомобиля, так как это может привести к дорогостоящему ремонту.</p> <br>
+						<p>Сотрудничая с нами Вы избежите все непредвиденные неприятности и конечно же останетесь довольны!<br> 
+						<b>От себя предлагаем:</b></p>
+						</div>
+
+
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-thumbs-up fa-3x"></i>
+								</div>
+								<h3>Высокое <br>качество</h3>
+								<p>Годами накопленный опыт позволяет справляться с любой сложностью работ</p>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-rub fa-3x"></i>
+								</div>
+								<h3>Низкие<br> цены</h3>
+								<p>Работаем напрямую без посредников и упраляющего персонала</p>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-clock-o fa-3x"></i>
+								</div>
+								<h3>Короткие <br>сроки  </h3>
+								<p>Вы получаете работу выполненную профессионалами в кратчайшие сроки </p>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="service-item">
+								<div class="service-icon">
+									<i class="fa fa-gears fa-3x"></i>
+								</div>
+								
+								<h3>Индивидуальный<br> подход</h3>
+								<p>Подберем под Ваши цели все самое подходящее и поможем принять оптимальное решение</p>							
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<!-- end Service section -->
+			
+			<!-- portfolio section -->
+			<section id="portfolio">
+				<div class="container">
+					<div class="row">
+					
+						<div class="sec-title text-center wow animated fadeInDown">
+							<h2>Фото выполненных работ</h2>
+							<p>Здесь показана лишь малая часть выполненных работ в нашем автосервисе. Не хватит места разместить все фотографии упешного ремонта, так как счет их идет уже на тысячи и тысячи штук.</p>
+						</div>
+						<ul class="project-wrapper wow animated fadeInUp">
+                       {% for img in images %}
+							<li class="portfolio-item">
+								<img src="{{ img.foto.url }}" class="img-responsive"
+									 alt="{{ img.text }}">
+								<figcaption class="mask">
+									<h3>{{ img.name }}</h3>
+									<p>{{ img.text }} </p>
+								</figcaption>
+								<ul class="external">
+									<li><a class="fancybox" title=" {{ img.name }}"
+										   data-fancybox-group="works" href="{{ img.foto.url }}"><i class="fa fa-search"></i></a></li>
+								</ul>
+							</li>
+							{% empty %}
+							<li>Контент редактируется</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- end portfolio section -->
+			
+			<!-- Testimonial section -->
+			<section id="testimonials" class="parallax">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+						
+							<div class="sec-title text-center white wow animated fadeInDown">
+								<h2>Отзывы клиентов</h2>
+							</div>
+							
+							<div id="testimonial" class=" wow animated fadeInUp">
+
+								{% for comment in comments %}
+								{% if comment.flag %}
+								<div class="testimonial-item text-center">
+									<div class="service-icon">
+									<i class="fa fa-users fa-4x"></i>
+								</div>
+									<div class="clearfix">
+										<span>{{ comment.author }}</span>
+										<p>{{ comment.text }}</p>
+									</div>
+								</div>
+								{% endif %}
+								{% empty %}
+								<p>Контент редактируется</p>
+								{% endfor %}
+							</div>
+						
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end Testimonial section -->
+			
+			<!-- Price section -->
+			<section id="price">
+				<div class="container">
+					<div class="row">
+					
+						<div class="sec-title text-center wow animated fadeInDown">
+							<h2>Цены</h2>
+							<p>Все цены конечно не перечислить... Часто получается так, что найдется задача из ряда вон, но тем не менее Вы можете кое-что подсчитать в нашем online калькуляторе, а лучше приезжайте, мы всегда сумеем договорится.</p>
+						</div>
+						
+						<div class="col-md-12 col-xs-1 col-sm-10 wow animated fadeInUp">
+
+							<table class="table table-hover col-md-12 col-xs-1 col-sm-10" >                   
+                           
+								    <thead>
+								    <tr>
+								        <th>Наименование</th>
+								        <th>Описание услуги</th>
+								        <th>Цена</th>
+								        <th>Выбрать</th>
+								    </tr>
+								    </thead>
+								    
+								    <tbody data-bind="foreach: serv">
+								    <tr>
+								  
+								        <td data-bind="text: title" ></td>
+								        <td data-bind="text: description" ></td>
+								        <td class='beafclass' data-bind="text: price"></td>
+								        <!--<td><input type="number"  min="0" data-bind="value: quantity"/></td>-->
+								        <td><input type="checkbox" data-bind="checked: quantity" /></td>
+								        
+								    </tr>    
+								    </tbody>
+								</table>
+								<p data-bind="visible: cost() > 0">Ориентировочная стоимость работ:&nbsp;<strong data-bind="text: cost"></strong>&nbsp;руб.</p>
+								<button class="btn btn-blue btn-effect pull-right" data-bind="click: clear, visible: cost() > 0">Очистить выбранное</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end Price section -->
+
+			<!-- Social section -->
+			<section id="social" class="parallax">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+						
+							<div class="sec-title text-center white wow animated fadeInDown">
+								<h2>Поделитесь с друзьями</h2>
+								<p>Если вам понравилось качество наших работ расскажите о нас в социальных сетях</p>
+							</div>
+							
+
+
+							<ul class="social-button">
+								<li class="wow animated zoomIn" data-wow-delay="0.1s"><div class="ya-share2" data-services="vkontakte"></div></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.4s"><div class="ya-share2" data-services="facebook"></div></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.7s"><div class="ya-share2" data-services="odnoklassniki"></div></li>							
+							</ul>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end Social section -->
+			
+			<!-- Contact section -->
+			<section id="contact" >
+				<div class="container">
+					<div class="row">
+						
+						<div class="sec-title text-center wow animated fadeInDown">
+							<h2>Контакты</h2>
+							<p>  <a href="{{ coords }}">
+								<i class="fa fa-thumb-tack fa-2x"></i> Мы на Google Maps - совсем рядом! </a> &nbsp;
+								&nbsp; Приезжайте в наш автосервис в любое удобное для Вас время :)</p><br>
+
+                           {% autoescape off %}
+                            <p>{{ path }}</p><br>
+							{% endautoescape %}
+							<p> <b>Вы уже были у нас? Вам все понравилось? Не сочтите за труд и оставтье свой отзыв
+								в форме  которая расположена ниже...</b></p>
+						</div>
+
+						<div class="col-md-7 contact-form wow animated fadeInLeft">
+							<form role="form" method="post">
+								{% csrf_token %}
+                                {% for field in form %}
+                                {{ field.errors }}
+                            <div class="input-field">
+                                {{field}}
+                            </div>
+                                {% endfor %}
+                             <button type="submit" id="submit" class="btn btn-blue btn-effect">Отправить отзыв</button>
+								</form>
+						</div>
+						<div class="col-md-5 wow animated fadeInRight">
+							<address class="contact-details">
+								<h3>Наш точный адрес</h3>					
+								<p><i class="fa fa-pencil"></i><span>{% autoescape off %}{{ street }}{% endautoescape %}</span></p><br>
+								<p><i class="fa fa-phone"></i>Телефон: +7(903) 757-07-35 </p>
+								<p><i class="fa fa-envelope"></i>info@autoservis-korolev.ru</p>
+							</address>
+						</div>
+			
+					</div>
+				</div>
+			</section>
+			<!-- end Contact section -->
+			
+			<section id="google-map">
+				<div id="map-canvas" class="wow animated fadeInUp"></div>
+			</section>
+		
+		</main>
+		
+		<footer id="footer">
+			<div class="container">
+				<div class="row text-center">
+					<div class="footer-content">
+                    <a href="{% static 'humans.txt'%}"><img src="{% static 'img/humanstxt.png'%}"></a>
+						<p>&copy <span>{% now "Y" %}</span>Design and Developed By<a href="http://www.themefisher.com">Themefisher</a> &nbsp;Powered by saltal</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="{% static 'js/jquery-1.11.1.min.js'%}"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="{% static 'js/bootstrap.min.js'%}"></script>
+		<!-- Single Page Nav -->
+        <script src="{% static 'js/jquery.singlePageNav.min.js'%}"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="{% static 'js/jquery.fancybox.pack.js'%}"></script>
+		<!-- Google Map API -->
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<!-- Owl Carousel -->
+        <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+        <!-- jquery easing -->
+        <script src="{% static 'js/jquery.easing.min.js'%}"></script>
+        <!-- Fullscreen slider -->
+        <script src="{% static 'js/jquery.slitslider.js'%}"></script>
+        <script src="{% static 'js/jquery.ba-cond.min.js'%}"></script>
+		<!-- onscroll animation -->
+        <script src="{% static 'js/wow.min.js'%}"></script>
+		<!-- Custom Functions -->
+        <script src="{% static 'js/main.js'%}"></script>
+        <script src="{% static 'js/knockout.js'%}"></script>
+
+
+        <script type="text/javascript">
+var services = {{ servitems|safe }}
+       </script>
+<script src="{% static 'js/calc.js'%}"></script>
+    </body>
+</html>

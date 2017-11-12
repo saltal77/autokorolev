@@ -1,0 +1,37 @@
+/* TEAM */
+  Developer:  saltal 
+  Location: Russia, Moscow
+                                                  
+/* THANKS */
+  StackOverflow: https://stackoverflow.com/
+  Themefisher: http://www.Themefisher.com
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery, Knockout, Bootstrap
+  Software: Django
+  IDE: PyCharm CE, Sublime, FileZilla, Photoshop
+
+                               -o/-                       
+                               +oo//-                     
+                              :ooo+//:                    
+                             -ooooo///-                   
+                             /oooooo//:                   
+                            :ooooooo+//-                  
+                           -+oooooooo///-                 
+           -://////////////+oooooooooo++////////////::    
+            :+ooooooooooooooooooooooooooooooooooooo+:::-  
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-   
+                     -:+ooooooooooooooooo+:://////:--     
+                       /ooooooooooooooooo+//////:-        
+                      -ooooooooooooooooooo////-           
+                      /ooooooooo+oooooooooo//:            
+                     :ooooooo+/::/+oooooooo+//-           
+                    -oooooo/::///////+oooooo///-          
+                    /ooo+::://////:---:/+oooo//:          
+                   -o+/::///////:-      -:/+o+//-         
+                   :-:///////:-            -:/://         
+                     -////:-                 --//:        
+                       --                       -:    
