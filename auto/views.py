@@ -29,7 +29,7 @@ def main_view(request):
                             ServiceItems.objects.all().values('title__type', 'description', 'price')])
     if request.method == "POST":
         form = CommentsForm(request.POST)
-        if form.is_valid():
+        if form.is_valid() and not request.POST['honey']:
             comment = form.save(commit=False)
             author = request.POST['author']
             text = request.POST['text']
