@@ -11,6 +11,7 @@ class CommentsForm(forms.ModelForm):
     text = forms.CharField(label='Отзыв', widget=forms.Textarea(attrs={'class': 'form-control',
                                                                           'placeholder': 'Ваш отзыв о работе...'}),
                              required=True)
+    honey = forms.CharField(widget=forms.HiddenInput(attrs={'value': ''}), required=False)
 
     class Meta:
         model = Comments
